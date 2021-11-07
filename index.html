@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Countdown Timer</title>
+   
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2020/09/23/17/12/flowers-5596564__340.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(58, 250, 0);
+    font-size: 50px;
+    padding: 48px 6px 48px 6px;
+}
+
+#clock {
+    color: black;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#clock > div {
+    padding: 13px;
+    border-radius: 6px;
+    background: yellow;
+    display: inline-block;
+    width: 4em;
+}
+
+#clock div > span {
+    padding: 13px;
+    border-radius: 6px;
+    background: rgb(253, 160, 73);
+    display: inline-block;
+}
+
+.value {
+    padding-top: 5px;
+    font-size: 20px;
+} 
+    </style>
+</head>
+
+<body>
+    <h1>Countdown Timer</h1>
+    <div class="container">
+        <div id="clock">
+            <div>
+                <span class="days" id="d"></span>
+                <div class="value">Days</div>
+            </div>
+            <div>
+                <span class="hours" id="h"></span>
+                <div class="value">Hours</div>
+            </div>
+            <div>
+                <span class="minutes" id="m"></span>
+                <div class="value">Minutes</div>
+            </div>
+            <div>
+                <span class="seconds" id="s"></span>
+                <div class="value">Seconds</div>
+            </div>
+        </div>
+
+        <h3 id="s"></h3>
+        <script src="timer.js"></script>
+    </div>
+</body>
+
+</html> 
